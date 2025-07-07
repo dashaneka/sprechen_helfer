@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein A1 Sprechen-Helfer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        :root {
+            --bg-color: #1a1a1e;
+            --card-color: #25252a;
+            --text-color: #e0e0e0;
+            --text-muted-color: #9e9e9e;
+            --accent-pink: #ff4081;
+            --accent-orange: #ffab40;
+            --border-color: #333338;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container { max-width: 800px; margin: 40px auto; }
+        header, footer { text-align: center; }
+        header { margin-bottom: 50px; }
+        h1 { font-size: 3rem; font-weight: 700; color: var(--text-color); margin-bottom: 10px; }
+        header p { font-size: 1.1rem; color: var(--text-muted-color); }
+        .accordion-item { background-color: var(--card-color); margin-bottom: 15px; border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; transition: all 0.3s ease-in-out; }
+        .accordion-header { width: 100%; background-color: var(--card-color); border: none; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; text-align: left; font-size: 1.25rem; font-weight: 600; color: var(--text-color); transition: background-color 0.2s ease; }
+        .accordion-header:hover { background-color: #2c2c32; }
+        .accordion-header .icon { font-size: 2rem; font-weight: 300; color: var(--accent-pink); transition: transform 0.3s ease; }
+        .accordion-header.active .icon { transform: rotate(45deg); }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), padding 0.5s ease; padding: 0 25px; }
+        .accordion-content-inner { padding: 20px 0; border-top: 1px solid var(--border-color); }
+        h3 { font-size: 1.5rem; color: var(--accent-orange); margin-bottom: 15px; margin-top: 25px; }
+        h4 { font-size: 1.2rem; color: var(--accent-pink); margin-bottom: 10px; margin-top: 20px; }
+        .german-term { font-weight: 600; color: var(--accent-pink); font-style: italic; }
+        .translation { color: var(--text-muted-color); font-size: 0.9rem; display: block; margin-top: 5px; }
+        blockquote { background-color: rgba(0,0,0,0.1); border-left: 3px solid var(--accent-orange); padding: 15px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .qa-block { margin-top: 20px; padding-bottom: 20px; border-bottom: 1px dashed var(--border-color); }
+        .qa-block:last-child { border-bottom: none; }
+        .question { font-weight: 600; margin-bottom: 8px; color: var(--text-color); }
+        .answer { color: #c0c0c0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 25px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border-color); }
+        th { color: var(--accent-orange); }
+        ul { list-style-position: inside; padding-left: 5px; margin-top: 10px; }
+        li { margin-bottom: 10px; }
+        footer { margin-top: 50px; color: var(--text-muted-color); }
+        footer .final-word { font-size: 1.5rem; font-weight: 600; color: var(--accent-pink); margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>dein a1 sprechen-helfer</h1><p>your a1 speaking helper</p></header>
+        <main class="accordion-container">
+            <div class="accordion-item">
+                <button class="accordion-header"><span>teil 1: sich vorstellen</span><span class="icon">+</span></button>
+                <div class="accordion-content"><div class="accordion-content-inner">
+                    <p>The examiner asks you to introduce yourself: <span class="german-term">"Stellen Sie sich bitte vor."</span></p>
+                    <h3>Your Personal Introduction Script</h3>
+                    <blockquote>
+                        <p>"Guten Tag. Mein Name ist <span class="german-term">Rajnish Sahani</span>.<br>
+                        Ich bin <span class="german-term">20</span> Jahre alt.<br>
+                        Ich komme aus <span class="german-term">Nepal</span> und ich wohne in <span class="german-term">Kathmandu</span>.<br>
+                        Ich spreche <span class="german-term">Nepalesisch, Englisch und ein bisschen Deutsch</span>.<br>
+                        Ich bin <span class="german-term">Student</span> von Beruf.<br>
+                        Meine Hobbys sind <span class="german-term">Lesen</span> und <span class="german-term">Musik hören</span>."</p>
+                    </blockquote>
+                    <h3>Extra Questions</h3>
+                    <div class="qa-block">
+                        <div class="question">How to spell your name (<span class="german-term">buchstabieren</span>)</div>
+                        <div class="answer">R -> <span class="german-term">err</span>, A -> <span class="german-term">ah</span>, J -> <span class="german-term">yot</span>, N -> <span class="german-term">en</span>, I -> <span class="german-term">ee</span>, S -> <span class="german-term">ess</span>, H -> <span class="german-term">ha</span>.</div>
+                    </div>
+                    <div class="qa-block">
+                        <div class="question">How to say your phone number (<span class="german-term">Telefonnummer</span>)</div>
+                        <div class="answer">Say the numbers one by one: <span class="german-term">neun, acht, zwei, sechs, acht, sieben, acht, zwei, neun, drei.</span></div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header"><span>teil 2: fragen stellen</span><span class="icon">+</span></button>
+                <div class="accordion-content"><div class="accordion-content-inner">
+                    <p>You get a card with a theme (<span class="german-term">Thema</span>) and keyword (<span class="german-term">Stichwort</span>) and must form a question.</p>
+                    
+                    <h3>The 2 Main Question Types</h3>
+                    <div class="qa-block">
+                        <div class="question">1. W-Fragen (for information)</div>
+                        <div class="answer">Structure: <span class="german-term">W-Wort</span> + <span class="german-term">Verb</span> + <span class="german-term">Sie</span> + ... ?<br>Example: <span class="german-term">Wo wohnen</span> Sie?</div>
+                    </div>
+                    <div class="qa-block">
+                        <div class="question">2. Ja/Nein-Fragen (for a yes/no answer)</div>
+                        <div class="answer">Structure: <span class="german-term">Verb</span> + <span class="german-term">Sie</span> + ... ?<br>Example: <span class="german-term">Haben</span> Sie Kinder?</div>
+                    </div>
+
+                    <h3>The 3 Missing Ingredients for PERFECT Questions</h3>
+                    <div class="qa-block">
+                        <div class="question">Ingredient 1: "Power Combos" (Verb + Noun Pairs)</div>
+                        <div class="answer">Some verbs and nouns almost always go together. Learn them as a pair!<ul><li><span class="german-term">Sport machen</span> (to do sport)</li><li><span class="german-term">Musik hören</span> (to listen to music)</li><li><span class="german-term">Deutsch lernen</span> (to learn German)</li><li><span class="german-term">einkaufen gehen</span> (to go shopping)</li></ul></div>
+                    </div>
+                    <div class="qa-block">
+                        <div class="question">Ingredient 2: The Right "Little Words" (Prepositions)</div>
+                        <div class="answer">Using the correct small word is crucial.<ul><li><span class="german-term">am</span>: For days of the week & the weekend (<span class="german-term">am Montag, am Wochenende</span>).</li><li><span class="german-term">um</span>: For specific clock times (<span class="german-term">um 8 Uhr</span>).</li><li><span class="german-term">in</span>: For places and general concepts (<span class="german-term">in Nepal, in der Freizeit</span>).</li></ul></div>
+                    </div>
+                    <div class="qa-block">
+                        <div class="question">Ingredient 3: The "Einen" Trick (Accusative Case)</div>
+                        <div class="answer">When you use an "action" verb like <span class="german-term">haben, kaufen, lesen, möchten, sehen</span>, the masculine article changes.<ul><li><span class="german-term">der</span> changes to <span class="german-term">den</span></li><li><span class="german-term">ein</span> changes to <span class="german-term">einen</span></li><li>Feminine (<span class="german-term">die</span>) and neuter (<span class="german-term">das</span>) articles do not change.</li><li>Example: Haben Sie <span class="german-term">einen</span> Stift? (because it's <span class="german-term">der</span> Stift)</li></ul></div>
+                    </div>
+
+                    <h3>Practice Question Summary</h3>
+                    <table>
+                        <thead><tr><th>Thema</th><th>Stichwort</th><th>W-Frage</th><th>Ja/Nein-Frage</th></tr></thead>
+                        <tbody>
+                            <tr><td>Wochenende</td><td>Sport</td><td>Welchen Sport machen Sie am Wochenende?</td><td>Machen Sie Sport am Wochenende?</td></tr>
+                            <tr><td>Freizeit</td><td>Buch</td><td>Welche Bücher lesen Sie gern?</td><td>Lesen Sie gern?</td></tr>
+                            <tr><td>Familie</td><td>Kinder</td><td>Wie viele Kinder haben Sie?</td><td>Haben Sie Kinder?</td></tr>
+                            <tr><td>Beruf</td><td>Arbeitszeit</td><td>Von wann bis wann arbeiten Sie?</td><td>Arbeiten Sie am Wochenende?</td></tr>
+                            <tr><td>Reisen</td><td>Urlaub</td><td>Wohin reisen Sie im Urlaub?</td><td>Reisen Sie gern?</td></tr>
+                            <tr><td>Sprachen</td><td>Deutsch</td><td>Warum lernen Sie Deutsch?</td><td>Sprechen Sie gut Deutsch?</td></tr>
+                        </tbody>
+                    </table>
+                </div></div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header"><span>teil 3: bitten formulieren</span><span class="icon">+</span></button>
+                <div class="accordion-content"><div class="accordion-content-inner">
+                    <p>You see a picture card and must make a polite request (<span class="german-term">eine Bitte</span>).</p>
+                    <h3>The 2 Ways to Make a Request</h3>
+                    <div class="qa-block">
+                        <div class="question">Method 1: The Polite Question (Recommended)</div>
+                        <div class="answer">Structure: <span class="german-term">Können Sie mir/bitte</span> + ... + <span class="german-term">Verb (at the end)</span>?<br>Example: Können Sie mir bitte den Stift <span class="german-term">geben</span>?</div>
+                    </div>
+                    <div class="qa-block">
+                        <div class="question">Method 2: The Formal Command (Imperativ)</div>
+                        <div class="answer">Structure: <span class="german-term">Verb</span> + <span class="german-term">Sie</span> + bitte ...<br>Example: <span class="german-term">Geben</span> Sie mir bitte den Stift.</div>
+                    </div>
+                    <h3>How to React to a Request</h3>
+                    <div class="qa-block">
+                        <div class="question">Positive Reactions (Saying Yes)</div>
+                        <div class="answer"><span class="german-term">Ja, natürlich.</span> | <span class="german-term">Ja, gern.</span> | <span class="german-term">Hier, bitte.</span></div>
+                    </div>
+                     <div class="qa-block">
+                        <div class="question">Negative Reactions (Saying No)</div>
+                        <div class="answer"><span class="german-term">Tut mir leid, das geht nicht.</span> | <span class="german-term">Entschuldigung, ich habe keinen...</span></div>
+                    </div>
+                    <h3>Special Cases</h3>
+                     <div class="qa-block">
+                        <div class="question">Negative Requests (e.g., "No Smoking")</div>
+                        <div class="answer">The phrase is usually <span class="german-term">bitte nicht + [verb]</span>.<br>Example: Können Sie bitte hier <span class="german-term">nicht rauchen</span>?</div>
+                    </div>
+                    <div class="qa-block">
+                        <div class="question">Separable Verbs (e.g., <span class="german-term">zumachen</span>)</div>
+                        <div class="answer">With <span class="german-term">können</span>, the verb becomes whole again at the end of the sentence.<br>Example: Können Sie bitte das Fenster <span class="german-term">zumachen</span>?</div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header"><span>wichtige grammatik: artikel</span><span class="icon">+</span></button>
+                <div class="accordion-content"><div class="accordion-content-inner">
+                    <p>Knowing the correct article (<span class="german-term">der, die, das</span>) is the final key. The best method is to learn the noun and its article together as one word.</p>
+                    <h4>Trick 1: Identify by Word Ending</h4>
+                    <ul>
+                        <li>It's probably <span class="german-term">die</span> (feminine) if it ends in: <span class="german-term">-e, -ung, -heit, -keit, -schaft, -ei</span>.</li>
+                        <li>It's probably <span class="german-term">das</span> (neuter) if it ends in: <span class="german-term">-chen, -lein</span> or is a verb used as a noun (<span class="german-term">das Essen</span>).</li>
+                    </ul>
+                    <h4>Trick 2: Identify by Word Meaning</h4>
+                     <ul>
+                        <li>It's probably <span class="german-term">der</span> (masculine) if it is: a male person/profession, day, month, season, or weather.</li>
+                        <li>It's probably <span class="german-term">die</span> (feminine) if it is: a female person/profession.</li>
+                    </ul>
+                    <h3>Essential A1 Vocabulary</h3>
+                    <table>
+                        <thead><tr><th>der (masculine)</th><th>die (feminine)</th><th>das (neuter)</th></tr></thead>
+                        <tbody>
+                            <tr><td>der Apfel</td><td>die Familie</td><td>das Buch</td></tr>
+                            <tr><td>der Stift</td><td>die Schwester</td><td>das Wasser</td></tr>
+                            <tr><td>der Kaffee</td><td>die Schule</td><td>das Auto</td></tr>
+                            <tr><td>der Sport</td><td>die Sprache</td><td>das Hobby</td></tr>
+                            <tr><td>der Urlaub</td><td>die Musik</td><td>das Brot</td></tr>
+                        </tbody>
+                    </table>
+                </div></div>
+            </div>
+        </main>
+        <footer>
+            <p class="final-word">Viel Erfolg bei deiner Prüfung!</p>
+            <p>Good luck with your exam! You can do it!</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                header.addEventListener('click', () => {
+                    const isActive = header.classList.contains('active');
+                    if (isActive) {
+                        header.classList.remove('active');
+                        content.style.maxHeight = null;
+                    } else {
+                        header.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                    header.querySelector('.icon').style.transform = isActive ? 'rotate(0deg)' : 'rotate(45deg)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
