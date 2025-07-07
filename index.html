@@ -52,6 +52,42 @@
         li { margin-bottom: 10px; }
         footer { margin-top: 50px; color: var(--text-muted-color); }
         footer .final-word { font-size: 1.5rem; font-weight: 600; color: var(--accent-pink); margin-bottom: 5px; }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .container { max-width: 100%; margin: 20px auto; }
+            h1 { font-size: 2.5rem; }
+            header p { font-size: 1rem; }
+            .accordion-header { padding: 18px 20px; font-size: 1.1rem; }
+            .accordion-content { padding: 0 20px; }
+            h3 { font-size: 1.3rem; }
+            h4 { font-size: 1.1rem; }
+            table, thead, tbody, th, td, tr { display: block; }
+            thead tr { position: absolute; top: -9999px; left: -9999px; }
+            tr { border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 10px; }
+            td { border: none; border-bottom: 1px solid #444; position: relative; padding-left: 50%; text-align: right; }
+            td:before {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: var(--accent-orange);
+            }
+            td:nth-of-type(1):before { content: "Thema"; }
+            td:nth-of-type(2):before { content: "Stichwort"; }
+            td:nth-of-type(3):before { content: "W-Frage"; }
+            td:nth-of-type(4):before { content: "Ja/Nein-Frage"; }
+             td:nth-of-type(1) { border-top: 1px solid var(--border-color); }
+        }
+         @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            .accordion-header { padding: 15px; font-size: 1rem; }
+            blockquote { padding: 10px 15px; }
+        }
     </style>
 </head>
 <body>
